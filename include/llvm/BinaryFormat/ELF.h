@@ -1132,6 +1132,14 @@ enum {
   PT_LOPROC = 0x70000000, // Lowest processor-specific program hdr entry type.
   PT_HIPROC = 0x7fffffff, // Highest processor-specific program hdr entry type.
 
+  PT_SCE_RELA = 0x60000000,         // Orbis RELA
+	PT_SCE_DYNLIBDATA = 0x61000000,   // Orbis Dynamic Library Data
+	PT_SCE_PROCPARAM = 0x61000001,    // Orbis Process parameters
+	PT_SCE_MODULE_PARAM = 0x61000002, // Orbis Module parameters
+	PT_SCE_RELRO = 0x61000010,        // Orbis RELO
+	PT_SCE_COMMENT = 0x6FFFFF00,      // Orbis Comment
+	PT_SCE_VERSION = 0x6FFFFF01,      // Orbis Version
+  
   // x86-64 program header types.
   // These all contain stack unwind tables.
   PT_GNU_EH_FRAME = 0x6474e550,
